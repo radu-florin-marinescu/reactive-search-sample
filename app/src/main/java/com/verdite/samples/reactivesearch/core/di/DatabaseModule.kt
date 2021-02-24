@@ -3,7 +3,7 @@ package com.verdite.samples.reactivesearch.core.di
 import android.content.Context
 import androidx.room.Room
 import com.verdite.samples.reactivesearch.core.Database
-import com.verdite.samples.reactivesearch.core.dao.StockDao
+import com.verdite.samples.reactivesearch.data.dao.StockDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

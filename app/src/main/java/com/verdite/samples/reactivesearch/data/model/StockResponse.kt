@@ -1,4 +1,4 @@
-package com.verdite.samples.reactivesearch.data
+package com.verdite.samples.reactivesearch.data.model
 
 data class StockResponse(
     val ticker: String,
