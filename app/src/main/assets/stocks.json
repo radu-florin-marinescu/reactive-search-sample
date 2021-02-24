@@ -1,0 +1,77 @@
+[
+  {
+    "ticker": "TSLA",
+    "name": "Tesla, Inc.",
+    "image": "https://res.cloudinary.com/dcas8je0m/image/upload/v1614182400/stocks/tesla-logo_vs3lpb.jpg"
+  },
+  {
+    "ticker": "COG",
+    "name": "Cabot Oil & Gas",
+    "image": "https://res.cloudinary.com/dcas8je0m/image/upload/v1614182399/stocks/Cabot-Oil-Gas-logo_mtpdhn.jpg"
+  },
+  {
+    "ticker": "GLOG",
+    "name": "GasLog Ltd",
+    "image": "https://res.cloudinary.com/dcas8je0m/image/upload/v1614182398/stocks/0_ypcyzi.jpg"
+  },
+  {
+    "ticker": "ENG",
+    "name": "Enagas",
+    "image": "https://res.cloudinary.com/dcas8je0m/image/upload/v1614182397/stocks/Enagas_color_RGB_sq5amc.jpg"
+  },
+  {
+    "ticker": "NFG",
+    "name": "National Fuel Gas Co",
+    "image": "https://res.cloudinary.com/dcas8je0m/image/upload/v1614182396/stocks/536ce56f3cdc5.preview-620_o3nm8x.jpg"
+  },
+  {
+    "ticker": "APC",
+    "name": "Apple",
+    "image": "https://res.cloudinary.com/dcas8je0m/image/upload/v1614182395/stocks/download_n1pnzk.png"
+  },
+  {
+    "ticker": "APGN",
+    "name": "Applegreen plc",
+    "image": "https://res.cloudinary.com/dcas8je0m/image/upload/v1614182394/stocks/Applegreen_PLC_1561527529_wx4ycc.png"
+  },
+  {
+    "ticker": "GME",
+    "name": "GameStop Corp.",
+    "image": "https://res.cloudinary.com/dcas8je0m/image/upload/v1614182393/stocks/i-222-1346844972740-82_hd_hkfsf5.png"
+  },
+  {
+    "ticker": "NGMS",
+    "name": "NeoGames S.A.",
+    "image": "https://res.cloudinary.com/dcas8je0m/image/upload/v1614182392/stocks/Neogames-logo-big_iupwxg.jpg"
+  },
+  {
+    "ticker": "VUSA",
+    "name": "Vanguard S&P 500 ETF",
+    "image": "https://res.cloudinary.com/dcas8je0m/image/upload/v1614182391/stocks/vanguard_kr0ske.jpg"
+  },
+  {
+    "ticker": "BABA",
+    "name": "Alibaba Group",
+    "image": "https://res.cloudinary.com/dcas8je0m/image/upload/v1614182390/stocks/rwVj6I1R_400x400_rpkcjk.jpg"
+  },
+  {
+    "ticker": "GOOGL",
+    "name": "Alphabet Inc. Class A",
+    "image": "https://res.cloudinary.com/dcas8je0m/image/upload/v1614182389/stocks/am6lv2x37bole6x4poz3_slgful.webp"
+  },
+  {
+    "ticker": "T",
+    "name": "AT&T Inc.",
+    "image": "https://res.cloudinary.com/dcas8je0m/image/upload/v1614182388/stocks/att_globe_500x500_ombb7e.webp"
+  },
+  {
+    "ticker": "NG",
+    "name": "National Grid PLC",
+    "image": "https://res.cloudinary.com/dcas8je0m/image/upload/v1614182387/stocks/ng--logo_vaqwsw.png"
+  },
+  {
+    "ticker": "FB",
+    "name": "Facebook, Inc.",
+    "image": "https://res.cloudinary.com/dcas8je0m/image/upload/v1614182386/stocks/58e919b0eb97430e819064ff.png_jtnbpy.png"
+  }
+]
