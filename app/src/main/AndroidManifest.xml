@@ -8,6 +8,7 @@
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
+            android:name=".core.Application"
             android:theme="@style/Theme.ReactiveSearchSample">
         <activity
                 android:name=".MainActivity"
