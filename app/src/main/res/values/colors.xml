@@ -11,6 +11,11 @@
 
     <color name="background.gradient.start">#272638</color>
     <color name="background.gradient.end">#1D1D26</color>
+    <color name="button.light">#20202A</color>
+    <color name="button.dark">#212030</color>
     
     <color name="grey">#909097</color>
+    <color name="red">#FF5353</color>
+    <color name="green">#66FFA8</color>
+    <color name="accent">#CE73EF</color>
 </resources>

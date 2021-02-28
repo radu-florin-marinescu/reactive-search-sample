@@ -16,33 +16,17 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+    
+    <!-- COMPONENTS -->
 
-    <style name="TextComponent" parent="Widget.AppCompat.TextView">
-        <item name="android:textColor">@color/white</item>
+    <style name="circularImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
     </style>
 
-    <style name="Header" parent="TextComponent">
-        <item name="android:fontFamily">@font/montserrat_bold</item>
-    </style>
-
-    <style name="Header.L">
-        <item name="android:textSize">@dimen/_20ssp</item>
-    </style>
-
-    <style name="Header.M">
-        <item name="android:textSize">@dimen/_17ssp</item>
-    </style>
-
-    <style name="Header.S">
-        <item name="android:textSize">@dimen/_22ssp</item>
-    </style>
-
-    <style name="Text" parent="TextComponent">
-        <item name="android:fontFamily">@font/montserrat_medium</item>
-    </style>
-
-    <style name="Text.L">
-        <item name="android:textSize">@dimen/_14ssp</item>
+    <style name="roundedCornersImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/_14sdp</item>
     </style>
 
 </resources>

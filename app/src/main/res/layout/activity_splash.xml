@@ -8,6 +8,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/bg_gradient"
+            tools:context=".ui.splash.SplashActivity"
             tools:ignore="ContentDescription">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -52,11 +53,13 @@
 
             <TextView
                     android:id="@+id/header"
-                    style="@style/Header.S"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/space.L"
+                    android:fontFamily="@font/montserrat_bold"
                     android:text="@string/label_splash_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text.6XL"
                     app:layout_constraintBottom_toTopOf="@+id/subHeader"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -64,12 +67,13 @@
 
             <TextView
                     android:id="@+id/subHeader"
-                    style="@style/Text.L"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/space.XS"
+                    android:layout_marginTop="@dimen/space.9XS"
+                    android:fontFamily="@font/montserrat_medium"
                     android:text="@string/label_splash_kotlin"
                     android:textColor="@color/grey"
+                    android:textSize="@dimen/text.3XS"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -99,21 +103,23 @@
                 app:layout_constraintTop_toBottomOf="@id/progress">
 
             <TextView
-                    style="@style/Text.L"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
                     android:text="@string/label_splash_open_source"
                     android:textAlignment="center"
                     android:textAllCaps="true"
-                    android:textColor="@color/grey" />
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text.3XS" />
 
             <TextView
-                    style="@style/Text.L"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
                     android:text="@string/label_splash_copyright"
                     android:textAlignment="center"
-                    android:textColor="@color/grey" />
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text.3XS" />
 
         </LinearLayout>
 

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/space.L"
+            android:paddingTop="@dimen/space.S"
+            android:paddingEnd="@dimen/space.L"
+            android:paddingBottom="@dimen/space.S"
+            tools:background="@color/background.gradient.start"
+            tools:ignore="ContentDescription">
+
+        <ImageButton
+                android:id="@+id/buttonMenu"
+                android:layout_width="@dimen/toolbar.itemSize"
+                android:layout_height="@dimen/toolbar.itemSize"
+                android:layout_marginEnd="@dimen/space.5XS"
+                android:background="@drawable/bg_button_dark_rounded_corners"
+                android:padding="@dimen/_12sdp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_menu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/leftSpace"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <Space
+                android:id="@+id/leftSpace"
+                android:layout_width="@dimen/toolbar.itemSize"
+                android:layout_height="@dimen/toolbar.itemSize"
+                android:layout_marginEnd="@dimen/space.5XS"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonMenu"
+                app:layout_constraintEnd_toStartOf="@+id/title"
+                app:layout_constraintStart_toEndOf="@+id/buttonMenu"
+                app:layout_constraintTop_toTopOf="@+id/buttonMenu" />
+
+        <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:maxLines="1"
+                android:text="@string/label_main_search"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text.2XS"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonMenu"
+                app:layout_constraintEnd_toStartOf="@+id/buttonNotifications"
+                app:layout_constraintStart_toEndOf="@+id/leftSpace"
+                app:layout_constraintTop_toTopOf="@+id/buttonMenu" />
+
+        <ImageButton
+                android:id="@+id/buttonNotifications"
+                android:layout_width="@dimen/toolbar.itemSize"
+                android:layout_height="@dimen/toolbar.itemSize"
+                android:layout_marginStart="@dimen/space.5XS"
+                android:background="@drawable/bg_button_transparent_rounded_corners"
+                android:padding="@dimen/_10sdp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_bell"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonMenu"
+                app:layout_constraintEnd_toStartOf="@+id/avatar"
+                app:layout_constraintStart_toEndOf="@+id/title"
+                app:layout_constraintTop_toTopOf="@+id/buttonMenu" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/avatar"
+                android:layout_width="@dimen/toolbar.itemSize"
+                android:layout_height="@dimen/toolbar.itemSize"
+                android:layout_marginStart="@dimen/space.5XS"
+                android:scaleType="fitCenter"
+                android:src="@drawable/rs_ph_avatar"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonMenu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/buttonNotifications"
+                app:layout_constraintTop_toTopOf="@+id/buttonMenu"
+                app:shapeAppearanceOverlay="@style/circularImage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

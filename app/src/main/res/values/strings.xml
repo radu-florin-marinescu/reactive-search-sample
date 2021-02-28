@@ -6,4 +6,16 @@
     <string name="label_splash_open_source">Open Source</string>
     <string name="label_splash_copyright">made by @RaduMarinescu</string>
 
+    <string name="label_main_search">Search</string>
+    <string name="label_main_balance">Balance</string>
+    <string name="label_main_week">this week</string>
+    <string name="label_main_balance_value">$1,514.35</string>
+    <string name="label_main_gain_value">+ $144.2 (10.52%)</string>
+    <string name="label_main_search_hint">Search</string>
+
+    <string name="placeholder_stock_name">Tesla</string>
+    <string name="placeholder_stock_ticker">TSLA</string>
+    <string name="placeholder_stock_price">698.84 USD</string>
+    <string name="placeholder_stock_gain">+16.88 (2.31%)</string>
+
 </resources>

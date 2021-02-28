@@ -1,11 +1,63 @@
 <resources>
-    <dimen name="fab_margin">16dp</dimen>
+    
+    <!-- GLOBAL -->
+
+    <dimen name="space.S">@dimen/_14sdp</dimen>
+    <dimen name="space.M">@dimen/_15sdp</dimen>
+    <dimen name="space.L">@dimen/_16sdp</dimen>
+
+    <dimen name="space.1XS">@dimen/_13sdp</dimen>
+    <dimen name="space.2XS">@dimen/_12sdp</dimen>
+    <dimen name="space.3XS">@dimen/_11sdp</dimen>
+    <dimen name="space.4XS">@dimen/_10sdp</dimen>
+    <dimen name="space.5XS">@dimen/_9sdp</dimen>
+    <dimen name="space.6XS">@dimen/_8sdp</dimen>
+    <dimen name="space.7XS">@dimen/_7sdp</dimen>
+    <dimen name="space.8XS">@dimen/_5sdp</dimen>
+    <dimen name="space.9XS">@dimen/_3sdp</dimen>
+
+    <dimen name="space.1XL">@dimen/_17sdp</dimen>
+    <dimen name="space.2XL">@dimen/_18sdp</dimen>
+    <dimen name="space.3XL">@dimen/_19sdp</dimen>
+    <dimen name="space.4XL">@dimen/_20sdp</dimen>
+    <dimen name="space.5XL">@dimen/_21sdp</dimen>
+    <dimen name="space.6XL">@dimen/_23sdp</dimen>
+    <dimen name="space.7XL">@dimen/_25sdp</dimen>
+    <dimen name="space.8XL">@dimen/_28sdp</dimen>
+    <dimen name="space.9XL">@dimen/_32sdp</dimen>
+
+    <dimen name="text.S">@dimen/_14ssp</dimen>
+    <dimen name="text.M">@dimen/_15ssp</dimen>
+    <dimen name="text.L">@dimen/_16ssp</dimen>
+
+    <dimen name="text.1XS">@dimen/_13ssp</dimen>
+    <dimen name="text.2XS">@dimen/_12ssp</dimen>
+    <dimen name="text.3XS">@dimen/_11ssp</dimen>
+    <dimen name="text.4XS">@dimen/_10ssp</dimen>
+    <dimen name="text.5XS">@dimen/_9ssp</dimen>
+    <dimen name="text.6XS">@dimen/_8ssp</dimen>
+    <dimen name="text.7XS">@dimen/_7ssp</dimen>
+    <dimen name="text.8XS">@dimen/_5ssp</dimen>
+    <dimen name="text.9XS">@dimen/_3ssp</dimen>
+
+    <dimen name="text.1XL">@dimen/_17ssp</dimen>
+    <dimen name="text.2XL">@dimen/_18ssp</dimen>
+    <dimen name="text.3XL">@dimen/_19ssp</dimen>
+    <dimen name="text.4XL">@dimen/_20ssp</dimen>
+    <dimen name="text.5XL">@dimen/_21ssp</dimen>
+    <dimen name="text.6XL">@dimen/_23ssp</dimen>
+    <dimen name="text.7XL">@dimen/_25ssp</dimen>
+    <dimen name="text.8XL">@dimen/_28ssp</dimen>
+    <dimen name="text.9XL">@dimen/_32ssp</dimen>
+
+    <!-- COMPONENT -->
+
+    <dimen name="toolbar.itemSize">@dimen/_40sdp</dimen>
+    <dimen name="fullyRoundedCorners" format="float">1000</dimen>
+
+    <!-- GUIDES -->
 
     <dimen name="guideline.splash.start" format="float">0.12</dimen>
     <dimen name="guideline.splash.end" format="float">0.88</dimen>
 
-    <dimen name="space.XS">@dimen/_10sdp</dimen>
-    <dimen name="space.M">@dimen/_20sdp</dimen>
-    <dimen name="space.L">@dimen/_25sdp</dimen>
-    
 </resources>

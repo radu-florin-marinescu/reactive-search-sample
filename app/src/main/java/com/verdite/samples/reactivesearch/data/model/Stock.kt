@@ -10,7 +10,8 @@ data class Stock(
     var logo: String,
     var price: Double,
     var change: Double,
-    var changePercentage: Double
+    var changePercentage: Double,
+    var changeType: StockChangeType
 ) {
     @PrimaryKey
     var id: Long? = null
