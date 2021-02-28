@@ -1,3 +1,11 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="guideline.splash.start" format="float">0.12</dimen>
+    <dimen name="guideline.splash.end" format="float">0.88</dimen>
+
+    <dimen name="space.XS">@dimen/_10sdp</dimen>
+    <dimen name="space.M">@dimen/_20sdp</dimen>
+    <dimen name="space.L">@dimen/_25sdp</dimen>
+    
 </resources>

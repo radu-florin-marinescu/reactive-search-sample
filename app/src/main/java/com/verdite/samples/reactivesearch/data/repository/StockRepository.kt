@@ -5,5 +5,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class StockRepository @Inject constructor(stockDao: StockDao) {
+class StockRepository @Inject constructor(
+    private val stockDao: StockDao
+) {
 }
