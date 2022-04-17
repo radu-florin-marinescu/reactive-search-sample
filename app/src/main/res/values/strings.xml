@@ -13,6 +13,13 @@
     <string name="label_main_gain_value">+ $144.2 (10.52%)</string>
     <string name="label_main_search_hint">Search</string>
 
+    <string name="label_stock_price">%1$s USD</string>
+    <string name="label_stock_change">%1$s $%2$s</string>
+    <string name="label_stock_change_percentage">%1$s%%</string>
+
+    <string name="label_minus">-</string>
+    <string name="label_plus">+</string>
+
     <string name="placeholder_stock_name">Tesla</string>
     <string name="placeholder_stock_ticker">TSLA</string>
     <string name="placeholder_stock_price">698.84 USD</string>

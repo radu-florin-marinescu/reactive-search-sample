@@ -2,6 +2,7 @@ package com.verdite.samples.reactivesearch.data.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import androidx.room.TypeConverter
 
 @Entity(tableName = "stocks")
 data class Stock(
@@ -15,4 +16,12 @@ data class Stock(
 ) {
     @PrimaryKey
     var id: Long? = null
+
+    internal class DBConverter {
+        @TypeConverter
+        fun to(value: String) = enumValueOf<StockChangeType>(value)
+
+        @TypeConverter
+        fun from(value: StockChangeType) = value.name
+    }
 }

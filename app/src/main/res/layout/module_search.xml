@@ -1,75 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/container"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="@dimen/space.L"
-            android:paddingTop="@dimen/space.5XS"
-            android:paddingEnd="@dimen/space.L"
-            android:paddingBottom="@dimen/space.4XS"
-            tools:background="@color/background.gradient.start"
-            tools:ignore="ContentDescription">
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/space.L"
+        android:paddingEnd="@dimen/space.L"
+        android:paddingBottom="@dimen/space.8XS"
+        tools:background="@color/background.gradient.start"
+        tools:ignore="ContentDescription">
 
         <TextView
-                android:id="@+id/header"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_bold"
-                android:includeFontPadding="false"
-                android:text="@string/label_main_search"
-                android:textColor="@color/white"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginBottom="@dimen/space.2XS"
-                app:layout_constraintBottom_toTopOf="@+id/cardView"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:textSize="@dimen/text.7XL" />
+            android:id="@+id/header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space.2XS"
+            android:fontFamily="@font/montserrat_bold"
+            android:includeFontPadding="false"
+            android:text="@string/label_main_search"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text.4XL"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <com.thelumiereguy.neumorphicview.views.NeumorphicCardView
-                android:id="@+id/cardView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:clickable="false"
-                android:focusable="false"
-                android:paddingBottom="@dimen/_7sdp"
-                app:cardRadius="@dimen/fullyRoundedCorners"
-                app:enableShadow="true"
-                app:enable_preview="true"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/header"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:neu_backgroundColor="@color/background.gradient.end"
-                app:shadowColor="@color/background.gradient.end"
-                app:shadowDy="@dimen/_2sdp"
-                app:shadowRadius="@dimen/_4sdp">
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingBottom="@dimen/_7sdp"
+            app:cardRadius="@dimen/fullyRoundedCorners"
+            app:enableShadow="true"
+            app:enable_preview="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header"
+            app:neu_backgroundColor="@color/background.gradient.end"
+            app:shadowColor="@color/background.gradient.end"
+            app:shadowDy="@dimen/_2sdp"
+            app:shadowRadius="@dimen/_4sdp">
 
             <EditText
-                    android:id="@+id/button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/bg_button_darker_rounded_corners"
-                    android:clickable="true"
-                    android:drawableStart="@drawable/ic_search"
-                    android:drawablePadding="@dimen/space.S"
-                    android:focusable="true"
-                    android:hint="@string/label_main_search_hint"
-                    android:importantForAutofill="no"
-                    android:inputType="text"
-                    android:paddingStart="@dimen/space.2XL"
-                    android:paddingTop="@dimen/text.3XS"
-                    android:paddingEnd="@dimen/space.2XL"
-                    android:paddingBottom="@dimen/text.3XS"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/grey" />
+                android:id="@+id/input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_darker_rounded_corners_20"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="@dimen/space.S"
+                android:focusable="true"
+                android:hint="@string/label_main_search_hint"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="textCapWords"
+                android:paddingStart="@dimen/space.2XL"
+                android:paddingTop="@dimen/text.3XS"
+                android:paddingEnd="@dimen/space.2XL"
+                android:paddingBottom="@dimen/text.3XS"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey" />
 
         </com.thelumiereguy.neumorphicview.views.NeumorphicCardView>
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

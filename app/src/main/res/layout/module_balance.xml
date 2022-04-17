@@ -1,66 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/container"
-            android:layout_width="match_parent"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/space.L"
+        android:paddingEnd="@dimen/space.L"
+        android:paddingBottom="@dimen/space.S"
+        tools:background="@color/background.gradient.start"
+        tools:ignore="ContentDescription">
+
+        <TextView
+            android:id="@+id/balanceHeader"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:paddingStart="@dimen/space.L"
-            android:paddingTop="@dimen/space.S"
-            android:paddingEnd="@dimen/space.L"
-            android:paddingBottom="@dimen/space.S"
-            tools:background="@color/background.gradient.start"
-            tools:ignore="ContentDescription">
+            android:fontFamily="@font/montserrat_medium"
+            android:includeFontPadding="false"
+            android:text="@string/label_main_balance"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text.1XS"
+            app:layout_constraintBottom_toTopOf="@+id/balance"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-                android:id="@+id/balanceHeader"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_medium"
-                android:text="@string/label_main_balance"
-                android:textColor="@color/grey"
-                android:textSize="@dimen/text.S"
-                app:layout_constraintBottom_toTopOf="@+id/balance"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            android:id="@+id/balance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:includeFontPadding="false"
+            android:text="@string/label_main_balance_value"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text.6XL"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/balanceHeader" />
 
         <TextView
-                android:id="@+id/balance"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_bold"
-                android:includeFontPadding="false"
-                android:text="@string/label_main_balance_value"
-                android:textColor="@color/white"
-                android:textSize="@dimen/text.9XL"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/balanceHeader" />
+            android:id="@+id/gain"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/label_main_gain_value"
+            android:textColor="@color/green"
+            android:textSize="@dimen/text.3XS"
+            app:layout_constraintBottom_toBottomOf="@+id/balance"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
-                android:id="@+id/gain"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_medium"
-                android:text="@string/label_main_gain_value"
-                android:textColor="@color/green"
-                android:textSize="@dimen/text.1XS"
-                app:layout_constraintBottom_toBottomOf="@+id/balance"
-                app:layout_constraintEnd_toEndOf="parent" />
-
-        <TextView
-                android:id="@+id/week"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_medium"
-                android:text="@string/label_main_week"
-                android:textColor="@color/green"
-                android:textSize="@dimen/text.3XS"
-                app:layout_constraintBottom_toTopOf="@+id/gain"
-                app:layout_constraintEnd_toEndOf="parent" />
+            android:id="@+id/week"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/label_main_week"
+            android:textColor="@color/green"
+            android:textSize="@dimen/text.5XS"
+            app:layout_constraintBottom_toTopOf="@+id/gain"
+            app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

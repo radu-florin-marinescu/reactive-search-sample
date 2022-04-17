@@ -1,141 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/bg_gradient"
-            tools:context=".ui.splash.SplashActivity"
-            tools:ignore="ContentDescription">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gradient"
+        tools:context=".ui.splash.SplashActivity"
+        tools:ignore="ContentDescription">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/contentContainer"
+            android:id="@+id/contentContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/progress"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/illustrationKotlin"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/il_kotlin"
+                app:layout_constraintBottom_toTopOf="@+id/header"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toStartOf="@+id/illustrationAndroid"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:layout_constraintWidth_percent="0.25" />
+
+            <ImageView
+                android:id="@+id/illustrationAndroid"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/space.M"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/il_android"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/illustrationKotlin"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.25" />
+
+            <TextView
+                android:id="@+id/header"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toTopOf="@+id/progress"
-                app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
-                app:layout_constraintStart_toStartOf="@+id/guidelineStart"
-                app:layout_constraintTop_toTopOf="parent">
-
-            <ImageView
-                    android:id="@+id/illustrationKotlin"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/il_kotlin"
-                    app:layout_constraintBottom_toTopOf="@+id/header"
-                    app:layout_constraintDimensionRatio="1:1"
-                    app:layout_constraintEnd_toStartOf="@+id/illustrationAndroid"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintHorizontal_chainStyle="packed"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_chainStyle="packed"
-                    app:layout_constraintWidth_percent="0.25" />
-
-            <ImageView
-                    android:id="@+id/illustrationAndroid"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_marginStart="@dimen/space.M"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/il_android"
-                    app:layout_constraintDimensionRatio="1:1"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/illustrationKotlin"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintWidth_percent="0.25" />
+                android:layout_marginTop="@dimen/space.L"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/label_splash_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text.6XL"
+                app:layout_constraintBottom_toTopOf="@+id/subHeader"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/illustrationKotlin" />
 
             <TextView
-                    android:id="@+id/header"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/space.L"
-                    android:fontFamily="@font/montserrat_bold"
-                    android:text="@string/label_splash_title"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/text.6XL"
-                    app:layout_constraintBottom_toTopOf="@+id/subHeader"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/illustrationKotlin" />
-
-            <TextView
-                    android:id="@+id/subHeader"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/space.9XS"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="@string/label_splash_kotlin"
-                    android:textColor="@color/grey"
-                    android:textSize="@dimen/text.3XS"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/header" />
+                android:id="@+id/subHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space.9XS"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/label_splash_kotlin"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text.3XS"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ProgressBar
-                android:id="@+id/progress"
-                style="?android:attr/progressBarStyleLarge"
-                android:layout_width="@dimen/_30sdp"
-                android:layout_height="@dimen/_30sdp"
-                android:indeterminateDrawable="@drawable/rs_progress"
-                app:layout_constraintBottom_toTopOf="@+id/footerContainer"
-                app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
-                app:layout_constraintStart_toStartOf="@+id/guidelineStart"
-                app:layout_constraintTop_toBottomOf="@+id/contentContainer" />
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:indeterminateDrawable="@drawable/rs_progress"
+            app:layout_constraintBottom_toTopOf="@+id/footerContainer"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/contentContainer" />
 
         <LinearLayout
-                android:id="@+id/footerContainer"
-                android:layout_width="0dp"
+            android:id="@+id/footerContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/progress">
+
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
-                app:layout_constraintStart_toStartOf="@id/guidelineStart"
-                app:layout_constraintTop_toBottomOf="@id/progress">
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/label_splash_open_source"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text.3XS" />
 
             <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="@string/label_splash_open_source"
-                    android:textAlignment="center"
-                    android:textAllCaps="true"
-                    android:textColor="@color/grey"
-                    android:textSize="@dimen/text.3XS" />
-
-            <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="@string/label_splash_copyright"
-                    android:textAlignment="center"
-                    android:textColor="@color/grey"
-                    android:textSize="@dimen/text.3XS" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/label_splash_copyright"
+                android:textAlignment="center"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text.3XS" />
 
         </LinearLayout>
 
         <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guidelineStart"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="@dimen/guideline.splash.start" />
+            android:id="@+id/guidelineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@dimen/guideline.splash.start" />
 
         <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guidelineEnd"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="@dimen/guideline.splash.end" />
+            android:id="@+id/guidelineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="@dimen/guideline.splash.end" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
